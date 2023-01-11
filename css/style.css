@@ -1,0 +1,199 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1ed;
+  font-size: 1.25rem;
+}
+button,
+input {
+  font-weight: inherit;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+}
+button {
+  cursor: pointer;
+  background-color: inherit;
+}
+.wrapper {
+  min-height: 100%;
+  position: relative;
+  overflow: clip;
+}
+.main-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+/* Trees */
+.main-screen__trees,
+.main-screen__trees span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  will-change: transform;
+}
+.main-screen__trees_6 span {
+  background: url("../images/trees-06.svg") bottom / auto 100% repeat-x;
+}
+.main-screen__trees_5 span {
+  background: url("../images/trees-05.svg") bottom / auto 100% repeat-x;
+}
+.main-screen__trees_4 span {
+  background: url("../images/trees-04.svg") bottom / auto 90% repeat-x;
+}
+.main-screen__trees_3 span {
+  background: url("../images/trees-03.svg") bottom / auto 70% repeat-x;
+}
+.main-screen__trees_2 span {
+  background: url("../images/trees-02.svg") bottom / auto 70% repeat-x;
+}
+.main-screen__trees_1 span {
+  background: url("../images/trees-01.svg") bottom / auto 60% repeat-x;
+}
+/* Animation of trees */
+.main-screen__trees span {
+  transform: translate(0px, 100%);
+}
+.loaded .main-screen__trees span {
+  transform: translate(0px, 20%);
+  transition: tranform 0.8s ease;
+}
+.loaded .main-screen__trees_1 span {
+  transition-delay: 0.5s;
+}
+.loaded .main-screen__trees_2 span {
+  transition-delay: 0.7s;
+}
+.loaded .main-screen__trees_3 span {
+  transition-delay: 0.9s;
+}
+.loaded .main-screen__trees_4 span {
+  transition-delay: 1.1s;
+}
+.loaded .main-screen__trees_5 span {
+  transition-delay: 1.3s;
+}
+.loaded .main-screen__trees_6 span {
+  transition-delay: 1.5s;
+}
+/* Birds */
+.main-screen__birds {
+  position: absolute;
+}
+.main-screen__birds span {
+  display: block;
+  z-index: 2;
+}
+.main-screen__birds_1 {
+  width: 45vh;
+  max-width: 40%;
+  left: 10vw;
+  top: 10vh;
+}
+.main-screen__birds_1 span {
+  background: url("../images/birds-01.svg") 0 0 / 100% no-repeat;
+  padding-bottom: 76%;
+}
+.main-screen__birds_2 {
+  width: 30vh;
+  max-width: 25%;
+  left: 10vw;
+  top: 10vh;
+}
+.main-screen__birds_2 span {
+  background: url("../images/birds-02.svg") 0 0 / 100% no-repeat;
+  padding-bottom: 55%;
+}
+/* Animation of birds */
+
+.main-screen__birds_1 span {
+  transform: translate(-200%, 0px);
+}
+.main-screen__birds_2 span {
+  transform: translate(200%, 0px);
+}
+.loaded .main-screen__birds_1 span,
+.loaded .main-screen__birds_2 span {
+  transform: translate(0px, 0px);
+  transition: transform 0.8s ease 2.3s;
+}
+/* Mountains */
+.main-screen__mountains,
+.main-screen__mountains span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.main-screen__mountains span {
+  background: url("../images/mountains.svg") center / auto 80% repeat-x;
+}
+/* Animation of mountains */
+
+.main-screen__mountains span {
+  transform: translate(0px, 100%);
+}
+.loaded .main-screen__mountains span {
+  transform: translate(0px, 0px);
+  transition: transform 1.5s ease 1.5s;
+}
+/* Content */
+.content {
+  padding-top: 200vh;
+}
+.content__container {
+  margin: 0 auto;
+  max-width: 75rem;
+  padding: 3.125rem 0.9675rem 5.125rem 0.9375rem;
+}
+.content__title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+/* .content__body {
+} */
+.content__body p {
+  line-height: 150%;
+}
+.content__body p:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
