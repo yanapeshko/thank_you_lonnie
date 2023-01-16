@@ -116,10 +116,10 @@ button {
 /* Birds */
 .main-screen__birds {
   position: absolute;
+  z-index: 2;
 }
 .main-screen__birds span {
   display: block;
-  z-index: 2;
 }
 .main-screen__birds_1 {
   width: 45vh;
@@ -177,7 +177,7 @@ button {
 }
 /* Content */
 .content {
-  padding-top: 200vh;
+  padding-top: 150vh;
 }
 .content__container {
   margin: 0 auto;

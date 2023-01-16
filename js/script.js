@@ -41,7 +41,7 @@ function windowLoad() {
       `;
     });
 
-    const birdsTranslate = (19 / 100) * finalPos;
+    const birdsTranslate = (190 / 100) * finalPos;
     const birdsScale = 1 + (2 / 100) * finalPos;
 
     birds[0].style.cssText = `
